@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shravani S | Python Full-Stack Developer & Trainee</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;700&family=Orbitron:wght@600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Ambient Black & Crimson Glow Frame -->
+  <div class="ambient-frame" aria-hidden="true"></div>
+  <div class="bg-grid" aria-hidden="true"></div>
+  <div class="orb-glow orb-1" aria-hidden="true"></div>
+  <div class="orb-glow orb-2" aria-hidden="true"></div>
+  <div class="orb-glow orb-3" aria-hidden="true"></div>
+
+  <!-- Hidden Photo Input -->
+  <input type="file" id="photoInput" accept="image/*" hidden />
+
+  <!-- Top Navigation -->
+  <header class="navbar">
+    <div class="nav-container">
+      <a href="#home" class="brand">
+        <span class="brand-accent">SS</span>
+        <span class="brand-slash">//</span>
+        <span>PORTFOLIO</span>
+      </a>
+
+      <nav class="nav-links" id="navLinks">
+        <a href="#home" class="active">Home</a>
+        <a href="#about">About</a>
+        <a href="#journey">Education & Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <div class="nav-actions">
+        <!-- <button type="button" class="btn-outline-sm" id="uploadTrigger">Change Photo</button> -->
+        <button type="button" class="menu-toggle" id="menuToggle" aria-label="Toggle Menu">☰</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section id="home" class="hero section">
+      <div class="container hero-grid">
+        <!-- Left Text Column -->
+        <div class="hero-content">
+          <div class="status-pill">
+            <span class="pulse-dot"></span>
+            <span>AVAILABLE FOR FULL-STACK ROLES // BENGALURU</span>
+          </div>
+
+          <h1 class="hero-title">
+            <span class="glitch-text" data-text="SHRAVANI S">SHRAVANI S</span>
+          </h1>
+          <h2 class="hero-subtitle">Python Full-Stack Developer & Trainee</h2>
+
+          <p class="hero-desc">
+            Crafting scalable backend architectures with <strong>Python & Django</strong> and turning ideas into sleek, responsive interfaces with <strong>HTML5, CSS3 & JavaScript</strong>. Based in Bengaluru, Karnataka, India.
+          </p>
+
+          <div class="hero-quick-links">
+            <a href="https://github.com/sshravani2007-ship-it" target="_blank" rel="noopener" class="quick-chip">
+              <span class="chip-label">GitHub:</span> sshravani2007-ship-it
+            </a>
+            <a href="mailto:s.shravani2007@gmail.com" class="quick-chip">
+              <span class="chip-label">Email:</span> s.shravani2007@gmail.com
+            </a>
+            <a href="tel:8050661774" class="quick-chip">
+              <span class="chip-label">Phone:</span> +91 8050661774
+            </a>
+          </div>
+
+          <div class="hero-cta">
+            <a href="#projects" class="btn-primary">
+              <span>View Projects</span>
+              <span class="arrow">→</span>
+            </a>
+            <a href="#contact" class="btn-secondary">Contact Me</a>
+          </div>
+        </div>
+
+        <!-- Right 3D Portrait & Interactive Core -->
+        <div class="hero-visual">
+          <div class="portrait-tilt-wrapper tilt-card" data-tilt>
+            <div class="portrait-glow-ring"></div>
+            <div class="portrait-card">
+              <img
+                src="assets/images/profile.jpeg"
+                alt="Shravani S Portrait"
+                id="heroPortrait"
+                onerror="this.src='https://placehold.co/420x520/0d0d12/ff1e38?text=SHRAVANI+S'"
+              />
+              <div class="portrait-scanline"></div>
+              <div class="portrait-overlay-gradient"></div>
+              <div class="portrait-caption">
+                <span class="caption-name">SHRAVANI S</span>
+                <span class="caption-role">BENGALURU, IN</span>
+              </div>
+            </div>
+
+            <!-- Floating 3D Badges -->
+            <div class="float-badge badge-top-left">
+              <span class="badge-tag">TRAINEE</span>
+              <strong>@ WebTech Software</strong>
+            </div>
+
+            <div class="float-badge badge-mid-left">
+              <span class="badge-tag">EDUCATION</span>
+              <strong>Rajadhani Degree College</strong>
+            </div>
+
+            <div class="float-badge badge-bottom-left">
+              <div class="mini-tags">
+                <span>Python 3</span>
+                <span>Django</span>
+                <span>HTML5/CSS3</span>
+                <span>SQLite3</span>
+              </div>
+            </div>
+
+            <!-- Interactive 3D Rotating Wireframe Core -->
+            <div class="core-3d-widget" title="3D Interactive Core">
+              <div class="cube-scene">
+                <div class="cube">
+                  <div class="face front">PY</div>
+                  <div class="face back">DJ</div>
+                  <div class="face right">JS</div>
+                  <div class="face left">UI</div>
+                  <div class="face top">DB</div>
+                  <div class="face bottom">3D</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Me Section -->
+    <section id="about" class="section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">01 // PROFILE</span>
+          <h2 class="section-title">About <span class="red-glow-text">Me</span></h2>
+        </div>
+
+        <div class="about-card tilt-card" data-tilt>
+          <div class="about-avatar-box">
+            <div class="avatar-ring">
+              <img
+                src="assets/images/profile.jpeg"
+                alt="Shravani S"
+                id="aboutPortrait"
+                onerror="this.src='https://placehold.co/200x200/0d0d12/ff1e38?text=SS'"
+              />
+            </div>
+            <span class="avatar-status">PYTHON FULL-STACK</span>
+          </div>
+
+          <div class="about-details">
+            <h3>Hello! I'm <span class="red-glow-text">Shravani S</span></h3>
+            <p>
+              I'm a Python Full-Stack Developer Trainee based in Bengaluru. I enjoy building full-stack web applications with Python and Django, and turning ideas into clean, responsive user interfaces with HTML5 and CSS3. I'm looking for opportunities to keep learning, contribute to real-world projects, and grow as a developer.
+            </p>
+
+            <div class="info-grid">
+              <div class="info-item">
+                <span class="info-label">Location</span>
+                <span class="info-value">Bengaluru, Karnataka, India</span>
+              </div>
+              <div class="info-item">
+                <span class="info-label">Primary Focus</span>
+                <span class="info-value">Python, Django & Frontend UI</span>
+              </div>
+              <div class="info-item">
+                <span class="info-label">Phone</span>
+                <span class="info-value">8050661774</span>
+              </div>
+              <div class="info-item">
+                <span class="info-label">Email</span>
+                <span class="info-value">s.shravani2007@gmail.com</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Education & Work Experience Section -->
+    <section id="journey" class="section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">02 // BACKGROUND</span>
+          <h2 class="section-title">Education & <span class="red-glow-text">Experience</span></h2>
+        </div>
+
+        <div class="two-col-grid">
+          <!-- Work Experience Card -->
+          <div class="glass-card tilt-card" data-tilt>
+            <div class="card-badge">INTERNSHIP & WORK EXPERIENCE</div>
+            <h3 class="card-title">Python Full-Stack Developer Trainee</h3>
+            <p class="card-org">WebTech Software Solutions • Bengaluru</p>
+            <ul class="glow-list">
+              <li>Developed backend logic using Python and the Django web framework.</li>
+              <li>Managed local virtual environment configurations and terminal operations.</li>
+              <li>Designed responsive, multi-column frontend interfaces using HTML5 and CSS3.</li>
+              <li>Managed source code versions and documentation uploads using Git and GitHub.</li>
+            </ul>
+          </div>
+
+          <!-- Education Card -->
+          <div class="glass-card tilt-card" data-tilt>
+            <div class="card-badge">ACADEMIC EDUCATION</div>
+            <h3 class="card-title">Rajadhani Degree College</h3>
+            <p class="card-org">Mahadevapura, Bengaluru • Bengaluru North University</p>
+            <div class="edu-highlight">
+              <div class="edu-row">
+                <span>University</span>
+                <strong>Bengaluru North University</strong>
+              </div>
+              <div class="edu-row">
+                <span>Campus Location</span>
+                <strong>Mahadevapura, Bengaluru</strong>
+              </div>
+              <div class="edu-row">
+                <span>Specialization</span>
+                <strong>Python Full-Stack & Web Design</strong>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Technical Skills Section -->
+    <section id="skills" class="section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">03 // ARSENAL</span>
+          <h2 class="section-title">Technical <span class="red-glow-text">Skills</span></h2>
+        </div>
+
+        <div class="skills-grid">
+          <div class="skill-card tilt-card" data-tilt>
+            <span class="skill-cat">01. LANGUAGES</span>
+            <h3>Programming</h3>
+            <div class="tag-cloud">
+              <span class="neon-tag">Python 3</span>
+              <span class="neon-tag">JavaScript</span>
+            </div>
+          </div>
+
+          <div class="skill-card tilt-card" data-tilt>
+            <span class="skill-cat">02. SERVER-SIDE</span>
+            <h3>Backend & DBMS</h3>
+            <div class="tag-cloud">
+              <span class="neon-tag">Django</span>
+              <span class="neon-tag">SQLite3</span>
+            </div>
+          </div>
+
+          <div class="skill-card tilt-card" data-tilt>
+            <span class="skill-cat">03. CLIENT-SIDE</span>
+            <h3>Frontend UI</h3>
+            <div class="tag-cloud">
+              <span class="neon-tag">HTML5</span>
+              <span class="neon-tag">CSS3</span>
+              <span class="neon-tag">Layout Design</span>
+            </div>
+          </div>
+
+          <div class="skill-card tilt-card" data-tilt>
+            <span class="skill-cat">04. WORKFLOW</span>
+            <h3>Tools & DevOps</h3>
+            <div class="tag-cloud">
+              <span class="neon-tag">Git</span>
+              <span class="neon-tag">GitHub</span>
+              <span class="neon-tag">VS Code</span>
+              <span class="neon-tag">Postman</span>
+              <span class="neon-tag">macOS Terminal</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured Projects Section -->
+    <section id="projects" class="section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">04 // SHOWCASE</span>
+          <h2 class="section-title">Featured <span class="red-glow-text">Project</span></h2>
+        </div>
+
+        <div class="project-showcase tilt-card" data-tilt>
+          <div class="project-visual">
+            <div class="mockup-browser">
+              <div class="browser-bar">
+                <span class="dot red"></span>
+                <span class="dot dark"></span>
+                <span class="dot dark"></span>
+                <span class="browser-url">django_project_blueprint // multi-template</span>
+              </div>
+              <div class="browser-body">
+                <div class="mini-app-card">
+                  <span class="mini-app-badge">TEMPLATE 01</span>
+                  <h4>YouTube UI Clone</h4>
+                  <p>Responsive media grid & interactive sidebar navigation</p>
+                </div>
+                <div class="mini-app-card">
+                  <span class="mini-app-badge">TEMPLATE 02</span>
+                  <h4>Google Maps Clone</h4>
+                  <p>Split-view layout & floating search header bar</p>
+                </div>
+                <div class="mini-app-card">
+                  <span class="mini-app-badge">TEMPLATE 03</span>
+                  <h4>Google Photos Clone</h4>
+                  <p>Dynamic masonry gallery & multi-division footer</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-info">
+            <span class="card-badge">FULL-STACK DJANGO BLUEPRINT</span>
+            <h3>Google Project</h3>
+            <p>
+              A modular web application featuring multiple layout templates (YouTube, Google Maps, and Google Photos clones) built with clean multi-column structures and Django templating.
+            </p>
+
+            <ul class="glow-list">
+              <li>Multi-division footer layouts with stacked link structures.</li>
+              <li>Interactive top headers and navigation bars.</li>
+              <li>Dynamic grid layouts for web app interfaces.</li>
+            </ul>
+
+            <div class="tag-cloud">
+              <span class="neon-tag">Python 3</span>
+              <span class="neon-tag">Django</span>
+              <span class="neon-tag">HTML5</span>
+              <span class="neon-tag">CSS3</span>
+              <span class="neon-tag">SQLite3</span>
+            </div>
+
+            <div class="project-links">
+              <a href="https://github.com/sshravani2007-ship-it/django_project_blueprint" target="_blank" rel="noopener" class="btn-primary">
+                <span>View GitHub Repository</span>
+                <span>↗</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">05 // CONNECT</span>
+          <h2 class="section-title">Get In <span class="red-glow-text">Touch</span></h2>
+        </div>
+
+        <div class="contact-grid">
+          <div class="contact-card tilt-card" data-tilt>
+            <span class="contact-label">PHONE NUMBER</span>
+            <a href="tel:8050661774" class="contact-value">+91 8050661774</a>
+            <button type="button" class="copy-btn" data-copy="8050661774">Copy Number</button>
+          </div>
+
+          <div class="contact-card tilt-card" data-tilt>
+            <span class="contact-label">EMAIL ADDRESS</span>
+            <a href="mailto:s.shravani2007@gmail.com" class="contact-value">s.shravani2007@gmail.com</a>
+            <button type="button" class="copy-btn" data-copy="s.shravani2007@gmail.com">Copy Email</button>
+          </div>
+
+          <div class="contact-card tilt-card" data-tilt>
+            <span class="contact-label">GITHUB PROFILE</span>
+            <a href="https://github.com/sshravani2007-ship-it" target="_blank" rel="noopener" class="contact-value">sshravani2007-ship-it</a>
+            <button type="button" class="copy-btn" data-copy="https://github.com/sshravani2007-ship-it">Copy URL</button>
+          </div>
+
+          <div class="contact-card tilt-card" data-tilt>
+            <span class="contact-label">CURRENT LOCATION</span>
+            <span class="contact-value">Bengaluru, Karnataka, India</span>
+            <span class="contact-sub">Open to Remote & On-Site Roles</span>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p>© 2026 <strong class="red-glow-text">Shravani S</strong>. Built with Python Full-Stack Passion.</p>
+      <p class="footer-sub">Bengaluru, Karnataka, India • sshravani2007-ship-it</p>
+    </div>
+  </footer>
+
+  <!-- Toast Notification -->
+  <div class="toast" id="toast">Copied to clipboard!</div>
+
+  <!-- Interactive 3D Tilt & Photo Upload Script -->
+  <script>
+    // Mobile Menu Toggle
+    const menuToggle = document.getElementById('menuToggle');
+    const navLinks = document.getElementById('navLinks');
+    menuToggle.addEventListener('click', () => navLinks.classList.toggle('open'));
+
+    // 3D Perspective Tilt Effect on Cards
+    document.querySelectorAll('[data-tilt]').forEach((card) => {
+      card.addEventListener('mousemove', (e) => {
+        const rect = card.getBoundingClientRect();
+        const x = e.clientX - rect.left;
+        const y = e.clientY - rect.top;
+        const centerX = rect.width / 2;
+        const centerY = rect.height / 2;
+        const rotateX = ((y - centerY) / centerY) * -6;
+        const rotateY = ((x - centerX) / centerX) * 6;
+        card.style.transform = `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) translateZ(6px)`;
+      });
+      card.addEventListener('mouseleave', () => {
+        card.style.transform = 'perspective(1000px) rotateX(0deg) rotateY(0deg) translateZ(0px)';
+      });
+    });
+
+    // Photo Upload / Preview Handler
+    const uploadTrigger = document.getElementById('uploadTrigger');
+    const photoInput = document.getElementById('photoInput');
+    const heroPortrait = document.getElementById('heroPortrait');
+    const aboutPortrait = document.getElementById('aboutPortrait');
+
+    uploadTrigger.addEventListener('click', () => photoInput.click());
+    photoInput.addEventListener('change', (e) => {
+      const file = e.target.files[0];
+      if (!file) return;
+      const reader = new FileReader();
+      reader.onload = (ev) => {
+        heroPortrait.src = ev.target.result;
+        aboutPortrait.src = ev.target.result;
+        showToast('Portrait updated!');
+      };
+      reader.readAsDataURL(file);
+    });
+
+    // Copy to Clipboard Buttons
+    const toast = document.getElementById('toast');
+    function showToast(msg) {
+      toast.textContent = msg;
+      toast.classList.add('show');
+      setTimeout(() => toast.classList.remove('show'), 2400);
+    }
+
+    document.querySelectorAll('.copy-btn').forEach((btn) => {
+      btn.addEventListener('click', () => {
+        const text = btn.getAttribute('data-copy');
+        navigator.clipboard.writeText(text).then(() => {
+          showToast(`Copied: ${text}`);
+        });
+      });
+    });
+  </script>
+</body>
+</html>
